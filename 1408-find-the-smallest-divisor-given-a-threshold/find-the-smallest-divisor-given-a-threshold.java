@@ -19,6 +19,6 @@ class Solution {
                 ans = Math.min(ans, mid);
                }
         }
-        return ans;
+        return l;
     }
 }
