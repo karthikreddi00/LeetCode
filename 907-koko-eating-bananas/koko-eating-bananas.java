@@ -3,10 +3,7 @@ class Solution {
         int n = piles.length;
         int ans = Integer.MAX_VALUE;
         long l = 1;
-        long h =  1000000000;
-        // for(int val : piles){
-        //     h = Math.max(h, val);
-        // }
+        long h = Arrays.stream(piles).max().getAsInt();
         while(l <= h){
             long mid = (l + h)/2;
             long sum = 0;
